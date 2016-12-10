@@ -83,15 +83,16 @@ footer {
 .aboutInformation li {
 	/*float: left;*/
 	margin: 0.5%;
-	width: 100%;
-	height: 400px;
+	width: auto;
+	height: auto;
 	background-color: #B0B6A8;
 	text-align: center;
 	font-size: 1em;
 	display: block;
 	vertical-align: middle;
 	border: solid;
-	border-color: #18453B
+	border-color: #18453B;
+	padding: 55px 0;
 }
 
 .aboutInformation h3{
@@ -128,9 +129,8 @@ footer {
 
 #lambdas {
 	width: 15%;
-	float: left;
 	height: auto;
-	top: 0;
+	float: left;
 	border:solid;
 	margin: 0 auto;
 }
@@ -183,6 +183,8 @@ footer {
 	z-index: 1000; 
 	position: top;
 	border-radius: 5px;
+	height: 15%;
+	width: 15%;
 }
 
 .bar {
@@ -224,7 +226,7 @@ li{
 	background: #B0B6A8;
 	border-style: solid;
 	border-color: #18453B;
-	height: 60px;
+	height: auto;
 }
 
 .footerList li{
@@ -250,3 +252,54 @@ li{
 	border-width: 1px;
 }
 
+@media (max-width: 1200px) {
+    header {
+    	height: 600px;
+    	padding: 0;
+    	background: url("../images/Tower.jpg");
+    	background-size: cover;
+    }
+    body{
+    	padding: 0;
+    	/*background: yellow;*/
+    }
+
+    p {
+    	font-size: 14px;
+    	padding: 0 20px;
+    }
+
+    .content {
+    	padding: 0;
+    	/*background: red;*/
+    }
+    .mainBackground {
+    	width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+    	height: 200px;
+    	padding: 0;
+    	background: url("../images/Tower.jpg");
+    	background-size: cover;
+    }
+    body{
+    	padding: 0;
+    	/*background: yellow;*/
+    }
+
+    p {
+    	font-size: 12px;
+    	padding: 0;
+    }
+
+    .content {
+    	padding: 0;
+    	/*background: red;*/
+    }
+    .mainBackground {
+    	width: 100%;
+    }
+}
